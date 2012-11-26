@@ -1,8 +1,7 @@
 Breakout
 =============
 
-A breakout game using HTML 5
-
+A breakout game using HTML 5 based on the tutorial at http://billmill.org/static/canvastutorial/ball.html
 
 
 ## License (MIT license)

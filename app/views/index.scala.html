@@ -1,7 +1,21 @@
 @(message: String)(implicit request: play.api.mvc.RequestHeader)
 
-@main("Welcome to Play 2.0") {
-    
-    @play20.welcome(message)
-    
+@moreScripts = {
+<script src="@routes.Assets.at("javascripts/breakout.js")" type="text/javascript"></script>
+}
+
+@main("breakout", moreScripts) {
+<div class="row">
+    <div class="span8 offset2">
+        <div id="noCanvas" class="well">
+            <p class="text-error">Your browser doesn't support Canvas</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="span8 offset2">
+        <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+</div>
+
 }
